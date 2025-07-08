@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product List</h1>
+        <Button id="fetchprod"> Click To See Data</Button>
+        <div class="productlists"></div>
+    </div>
+    <script>
+        document.getElementById
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Fetcher</title>
+  <style>
+    .product {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 8px;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Product List</h1>
+  <button id="fetch-btn">Load Products</button>
+  <div id="product-list"></div>
+
+  <script>
+    async function fetchprod() {
+      try {
+        let product = await fetch('https://dummyjson.com/products');
+        let data = await product.json();
+
+        const container = document.getElementById('product-list');
+        container.innerHTML = ''; // clear previous content
+
+        data.products.forEach(prod => {
+          const div = document.createElement('div');
+          div.className = 'product';
+          div.innerHTML = `
+            <h3>${prod.title}</h3>
+            <p>${prod.description}</p>
+            <strong>Price: $${prod.price}</strong>
+          `;
+          container.appendChild(div);
+        });
+
+      } catch (err) {
+        console.log("error:", err.message);
+      }
+    }
+
+    // Event listener on button
+    document.getElementById('fetch-btn').addEventListener('click', fetchprod);
+  </script>
+</body>
+</html> -->
+
+
+
+
